@@ -10,3 +10,4 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":7421,"time":"2015-12-21T02:07:13.267Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":7484,"time":"2015-12-21T02:07:25.227Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":7552,"time":"2015-12-21T02:07:37.143Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":40,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":7552,"time":"2015-12-21T02:08:38.552Z","msg":"No connection has been established to New Relic after 4 attempts.","component":"collector_api"}
