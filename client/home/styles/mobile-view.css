@@ -10,6 +10,7 @@
   position: relative;
   height: auto;
   text-align: center;
+  z-index: 1;
 }
 
 
@@ -93,6 +94,7 @@
 .mobile-view-container > .about {
   background: black;
   padding: 40px 30px;
+  z-index: 1;
 }
 .mobile-view-container > .about > .text {
   font-weight: 100;
@@ -113,6 +115,7 @@
   height: auto;
   background: url("https://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-4.png");
   background-size: cover;
+  top:-4px;
 }
 .mobile-view-container > .work > .overlay,
 .mobile-view-container > .work > .gradient {
