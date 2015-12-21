@@ -14,8 +14,13 @@
 	<div class="work">
 		<div class="overlay"></div>
 		<div class="gradient"></div>
+
 		<div class="swiper-container">
 		    <!-- Additional required wrapper -->
+		    <div class="swipe-instructions">
+		    	<p>SWIPE THROUGH MY PORTFOLIO</p>
+		    	<img src="https://www.design19.org/images/blitz/swipe_icon.png">
+		    </div>
 		    <div class="swiper-wrapper">
 		        <!-- Slides -->
 		        <div class="swiper-slide"
@@ -23,19 +28,30 @@
 		        >
 		        	<p class="heading">{{project.heading}}</p>
 		        	<p class="stack">{{project.stack}}</p>
-		        	<p class="details">{{project.details}}</p>
+		        	<p class="details">{{project.subHeading}}</p>
+		        	<button 
+		        		[ng-style] = "{
+		        			'display' : project.link ? 'inline-block' : 'none'
+		        		}"
+		        		(click)="goTo(project.link)">SEE IT LIVE!
+		        	</button>
+		        	<button 
+		        		[ng-style] = "{
+		        			'display' : project.dribbble ? 'inline-block' : 'none'
+		        		}"
+		        		(click)="goTo(project.dribbble)">DRIBBBLE
+		        	</button>
 		        </div>
 		    </div>
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
 		    
-		    <!-- If we need navigation buttons -->
-		    <div class="swiper-button-prev"></div>
-		    <div class="swiper-button-next"></div>
-		    
-		    <!-- If we need scrollbar -->
-		    <div class="swiper-scrollbar"></div>
 		</div>
+		<div class="mobile-contact-card">
+			<p class="heading">CONTACT</p>
+			<button (click) = "sendMail()">SEND EMAIL</button>
+		</div>		
 	</div>
+
 
 </div>

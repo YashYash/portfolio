@@ -37,6 +37,7 @@ import { ComponentsState }                    from '/build/home/scripts/services
  */
 @Component({
 	selector: 'landing-banner',
+	inputs: ['imagesLoaded: imagesloaded'],
 	directives: [CORE_DIRECTIVES, ROUTER_DIRECTIVES],
 	templateUrl: "/home/templates/landing-banner.html"
 })
@@ -86,9 +87,6 @@ export class LandingBanner {
         $('.scroll-container').on("scroll", (e) => {
             self.ScrollHandler(e);
         });  
-        setTimeout(() => {
-			self.checkIfImagesLoaded();
-        }, 1000);
 	}
 
 	// Triggered once the route is changed
@@ -112,24 +110,6 @@ export class LandingBanner {
 				self.showSubHeading = true;
 			}, 500);			
 		}, 200);
-	}
-
-	// Check if images loaded
-	checkIfImagesLoaded() {
-		var self = this;
-		$(document).ready(function() {
-			setTimeout(() => {
-				console.log($(".background-images").length);
-				$('.scroll-container').waitForImages(() => {
-					self.imagesLoaded = true;
-				}, (loaded, total) => {
-					self.loadingProgress = (loaded / (total - 12)) * 100 + "%";
-					if (self.loadingProgress === "100%") {
-						self.imagesLoaded = true;
-					}
-				});
-			}, 1000);
-		}) 		
 	}
 
     // Shows the home page

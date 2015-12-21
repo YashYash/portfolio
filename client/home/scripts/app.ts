@@ -141,7 +141,6 @@ export class App {
 	checkIfImagesLoaded() {
 		var self = this;
         setTimeout(() => {
-			console.log($(".background-images").length);
 			$('.scroll-container').waitForImages(() => {
 				self.imagesLoaded = true;
 			}, (loaded, total) => {

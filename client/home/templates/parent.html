@@ -38,7 +38,9 @@ This is the secondary parent container after body and <app></app>
   </div>
 
   <!-- LANDING BANNER - SITE ROUTING HAPPENS HERE -->
-  <landing-banner></landing-banner>
+  <landing-banner
+    [imagesloaded] = "imagesLoaded"
+  ></landing-banner>
 
   <!-- ROUTING VIEWS -->
   <!-- <router-outlet [message]="'Launch missiles?'"></router-outlet> -->

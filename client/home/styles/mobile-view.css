@@ -99,6 +99,8 @@
   letter-spacing: .2em;
   line-height: 1.5em;
   font-style: italic;
+  max-width:600px;
+  margin:auto;
 }
 .mobile-view-container > .about > .text > span {
   color: #22c1ee;
@@ -108,7 +110,7 @@
 /* Work */
 .mobile-view-container > .work {
   position: relative;
-  height: 600px;
+  height: auto;
   background: url("https://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-4.png");
   background-size: cover;
 }
@@ -133,28 +135,41 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
 }
-.mobile-view-container > .work > .work-slider .slide {
-  text-align: center;
-  height: 600px;
+
+/* Swipe instructions */
+.swipe-instructions {
+    position: relative;
+    padding: 30px 0 0 0;
+    text-align: center;  
 }
-.mobile-view-container > .work > .work-slider .slide .content {
-  width: 90%;
-  margin: auto;
-  height: auto;
+.swipe-instructions > p {
+  font-weight:100;
 }
-.mobile-view-container > .work > .work-slider .slide .content > .heading {
-  font-size: 25px;
-  color: white;
-  font-weight: 100;
+.swipe-instructions > span {
+  color:white;
 }
+.swipe-instructions > img {
+    width: 24px;
+    margin-top: 20px;  
+}
+/* Portfolio slideshow */
 .swiper-container {
   width: 100%;
-  height: 600px;
+  height: 580px;
 }
+
+/* Overwrite the style for the next and previous buttons in the slider*/
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
 }
+
+/* The individual slides */
+.swiper-slide {
+  text-align: center;
+}
+
+/* Project Heading Stack and Details */
 .swiper-slide .heading {
   text-align: center;
   font-size: 30px;
@@ -164,6 +179,7 @@
   height: auto;
   line-height: 1.3em;
 }
+
 .swiper-slide .stack,
 .swiper-slide .details {
   letter-spacing: .1em;
@@ -171,6 +187,7 @@
   font-style: italic;
   width: 90%;
   margin: auto;
+  max-width:600px;
 }
 .swiper-slide .stack {
   text-align: center;
@@ -184,11 +201,27 @@
   margin-top: 20px;
   font-weight: 100;
   text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom:20px;
+}
+
+.swiper-slide button {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 40px;
+    width: 180px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: .4s;  
 }
 
 .swiper-pagination-bullet {
 	background:white !important;
 }
+
 .swiper-pagination-bullet-active {
 	background:#22c1ee !important;
 }
@@ -196,6 +229,57 @@
 .swiper-container-cube {
     overflow: visible;
     border-top: 1px solid black;
+}
+
+.swiper-container-cube::-webkit-scrollbar {
+  display: none;
+}
+.swiper-container-cube::-moz-scrollbar {
+  display: none;
+}
+.swiper-container-cube::-ms-scrollbar {
+  display: none;
+}
+.swiper-container-cube::-o-scrollbar {
+  display: none;
+}
+/* Contact Card */
+.mobile-view-container > .work > .mobile-contact-card {
+  position: relative;
+  padding:100px 0;
+}
+
+.mobile-contact-card .heading {
+    text-align: center;
+    font-size: 14px;
+    height: auto;
+    font-weight: 600;  
+}
+.mobile-contact-card button {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 40px;
+    width: 180px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: .4s; 
+    display: block;
+    height: 40px;
+    border: 1px solid #fff;     
+}
+
+@media(min-width:430px) {
+  .swiper-container {
+    width: 100%;
+    height: 480px;
+  }  
+  .swiper-slide button {
+    display: inline-block;
+    margin:20px 10px;
+  }
 }
 @media(min-width:1025px) {
   .mobile-view-container {

@@ -71,5 +71,14 @@ export class MobileView {
 
 	}	
 	// ui- reponders
+	goTo(link:string) {
+		let win = window.open(link);
+		win.focus();
+	}
+
+    sendMail() {
+		let mailLink: string = "mailto:?Subject=Hey%20Yash.%20I%20checked%20out%20your%20site!%20Let's%20get%20in%20touch.&body=Dear%20Yash,&to=yash.saxena1217@gmail.com";
+		window.location.href = mailLink;
+    }
 }
 

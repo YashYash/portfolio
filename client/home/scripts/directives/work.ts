@@ -89,7 +89,6 @@ export class Work {
         var self = this;
 
         $('.scroll-container').on("scroll", (e) => {
-			console.log("WORK SCROLLING");
             self.ScrollHandler(e);
 			clearTimeout($.data(this, 'scrollTimer'));
 			$.data(this, 'scrollTimer', setTimeout(function() {
