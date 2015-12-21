@@ -233,19 +233,6 @@
     overflow: visible;
     border-top: 1px solid black;
 }
-
-.swiper-container-cube::-webkit-scrollbar {
-  display: none;
-}
-.swiper-container-cube::-moz-scrollbar {
-  display: none;
-}
-.swiper-container-cube::-ms-scrollbar {
-  display: none;
-}
-.swiper-container-cube::-o-scrollbar {
-  display: none;
-}
 /* Contact Card */
 .mobile-view-container > .work > .mobile-contact-card {
   position: relative;
@@ -256,7 +243,9 @@
     text-align: center;
     font-size: 14px;
     height: auto;
-    font-weight: 600;  
+    font-weight: 100;
+    z-index: 1;
+    position: relative;
 }
 .mobile-contact-card button {
     position: relative;
