@@ -192,6 +192,11 @@
 .swiper-pagination-bullet-active {
 	background:#22c1ee !important;
 }
+
+.swiper-container-cube {
+    overflow: visible;
+    border-top: 1px solid black;
+}
 @media(min-width:1025px) {
   .mobile-view-container {
     display: none;
