@@ -64,8 +64,7 @@
 }
 
 .contact-card > .background-image {
-  background: url('https://s3.amazonaws.com/spotonit/images/other/yash');
-  background: url('http://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-5.png');
+  background: url('https://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-5.png');
   background-size: cover !important;
   /*filter: blur(2px);*/
   overflow: hidden;
