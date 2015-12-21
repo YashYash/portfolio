@@ -24,9 +24,7 @@
     "rsvp": "~3.1.0",
     "serve-favicon": "~2.2.0",
     "systemjs": "^0.19.5",
-    "traceur": "0.0.92"
-  },
-  "devDependencies": {
+    "traceur": "0.0.92",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-browserify": "^0.5.1",
@@ -40,6 +38,6 @@
     "gulp-plumber": "^1.0.1",
     "gulp-typescript": "^2.9.2",
     "gulp-uglify": "^1.2.0",
-    "watchify": "^3.2.2"
+    "watchify": "^3.2.2"    
   }
 }
