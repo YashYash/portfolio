@@ -117,17 +117,19 @@ export class LandingBanner {
 	// Check if images loaded
 	checkIfImagesLoaded() {
 		var self = this;
-        setTimeout(() => {
-			console.log($(".background-images").length);
-			$('.scroll-container').waitForImages(() => {
-				self.imagesLoaded = true;
-			}, (loaded, total) => {
-				self.loadingProgress = (loaded / (total - 12)) * 100 + "%";
-				if(self.loadingProgress === "100%") {
+		$(document).ready(function() {
+			setTimeout(() => {
+				console.log($(".background-images").length);
+				$('.scroll-container').waitForImages(() => {
 					self.imagesLoaded = true;
-				}
-			});
-        }, 1000); 		
+				}, (loaded, total) => {
+					self.loadingProgress = (loaded / (total - 12)) * 100 + "%";
+					if (self.loadingProgress === "100%") {
+						self.imagesLoaded = true;
+					}
+				});
+			}, 1000);
+		}) 		
 	}
 
     // Shows the home page
