@@ -1,0 +1,82 @@
+<!--**********************************
+
+Title
+landing-banner.html
+
+Route
+/#/
+
+CSS FILES
+global/styles/global.css
+home/styles/landing-banner.css
+
+Inline CSS
+
+Summary
+This is the landing page
+
+********************************** -->
+
+<div class="landing-banner-container">
+	<div class="overlay" [ng-style] = "styleOverlay()">
+		<div class="loading-content">
+			<p class="heading"
+				[ng-style] = "{'opacity' : showHeading ? 1 : 0, 'top' : showHeading ? 0 : '10px'}"
+			>THANKS FOR VISITING</p>
+			<p class="sub-heading"
+				[ng-style] = "{'opacity' : showSubHeading ? 1 : 0, 'top' : showSubHeading ? 0 : '10px'}"
+			>POWERED BY ANGULAR 2.0</p>
+			<div class="loader">
+				<div class="line"
+					[ng-style]="loadingAnimation()"
+				></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="gradient"></div>
+	<div class="gradient"></div>
+	<div class="content"
+		[ng-class] = "{
+			'fade-in': (imagesLoaded)
+		}"
+	>
+		<div class="name" 		
+			[ng-class] = "{
+				'fade-out': (workVisible || aboutVisible)
+			}"
+		>
+			<p class="heading">YASH SAXENA</p>
+			<div class="line"></div>
+			<p class="sub-heading">ENTREPRENEUR - DEVELOPER - DESIGNER</p>
+				<button (click)="goToPage('work')">MY WORK</button>
+				<button (click)="goToPage('about')">ABOUT ME</button>
+		</div>
+		<div class="work"
+			[ng-class] = "{
+				'fade-in': (workVisible)
+			}"
+		>
+			<p class="heading">MY WORK</p>
+			<div class="line"></div>
+			<p class="sub-heading">SCROLL DOWN TO SEE WHAT I'VE BUILT</p>
+			<div class="tail arrow-asset"></div>
+			<div class="head arrow-asset">
+				<span class="icon-downarrow"></span>
+			</div>
+		</div>
+		<div class="about"
+			[ng-class] = "{
+				'fade-in': (aboutVisible)
+			}"
+		>
+			<p class="heading">ABOUT ME</p>
+			<div class="line"></div>
+			<p class="sub-heading">SCROLL DOWN TO GET TO KNOW ME</p>
+			<div class="tail arrow-asset"></div>
+			<div class="head arrow-asset">
+				<span class="icon-downarrow"></span>
+			</div>
+		</div>		
+	</div>
+</div>

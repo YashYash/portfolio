@@ -1,0 +1,122 @@
+/****************************************
+
+Title
+nav.css
+
+DOM
+home/templates/nav.html
+
+****************************************/
+
+
+/* Home app nav bar */
+
+.home-nav-container {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  max-width: 1000px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 3;
+  transform: translateY(-55px);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.home-nav-container.show {
+  /*background:#22c1ee;*/
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* Placeholder logo */
+
+.home-nav-container > .logo {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 25px;
+  border: 1px solid white;
+}
+
+
+/* Share Icons */
+
+.home-nav-container > ul {
+  padding-top: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 185px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.home-nav-container > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.home-nav-container > ul > li:hover {
+  text-shadow: 0 0 10px white;
+}
+
+
+/* Contact button */
+
+.home-nav-container > button {
+  position: absolute;
+  color: #fff;
+  height: 40px;
+  width: 180px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  transition: .4s;
+}
+
+.home-nav-container > button:hover {
+  background: white;
+  background: rgba(238, 238, 238, 0.1);
+}
+
+.home-nav-container > .link {
+  position: absolute;
+  top: 20px;
+  color: #fff;
+  font-weight: 600;
+  right: 265px;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.home-nav-container > .link:hover {
+  text-decoration: underline;
+}
+
+.home-nav-container > .link.show {
+  right: 235px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.home-nav-container > .link.home {
+  opacity: 1;
+  right: 325px;
+}

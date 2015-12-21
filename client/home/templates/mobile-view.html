@@ -1,0 +1,41 @@
+<div class="mobile-view-container">
+	<div class="banner">
+		<div class="overlay"></div>
+		<div class="gradient"></div>
+		<p class="heading">YASH SAXENA</p>
+		<div class="line"></div>
+		<p class="sub-heading">ENTREPRENER - DEVELOPER - DESIGNER</p>
+		<div class="tail"></div>
+		<div class="head icon-downarrow"></div>
+	</div>
+	<div class="about">
+		<p class="text">My name is Yash Saxena. I am <span>21 YEARS OLD</span> and I live in <span>Atherton, CA</span>. I have been professionally developing for <span>2.5 years</span>. I went to high school and university in <span>Canada</span>. At the end of my senior high school year I was accepted to the <span>Royal College of Surgeors</span> in Ireland. I decided to postpone that decision and go try out university in Canada prior to making my final decision. I went to the <span>University of Wifrid Laurier for Health Sciences</span>. After 3 semesters I decided to take time off school to come to California and work as a web developer. I joined Stanza as a Full stack developer. I have been here at Stanza for a <span>year and half</span>, now I am the <span>Lead Frontend Developer</span>, managing a very talented team. </p>
+	</div>
+	<div class="work">
+		<div class="overlay"></div>
+		<div class="gradient"></div>
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide"
+		        	*ng-for = "#project of projects; #i=index"
+		        >
+		        	<p class="heading">{{project.heading}}</p>
+		        	<p class="stack">{{project.stack}}</p>
+		        	<p class="details">{{project.details}}</p>
+		        </div>
+		    </div>
+		    <!-- If we need pagination -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- If we need navigation buttons -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- If we need scrollbar -->
+		    <div class="swiper-scrollbar"></div>
+		</div>
+	</div>
+
+</div>

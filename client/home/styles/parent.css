@@ -1,0 +1,102 @@
+/****************************************
+
+Title
+parebt.css
+
+DOM
+home/templates/parent.html
+
+****************************************/
+
+
+/* Overall Scroll Container */
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  transition:0.2s;
+  display: none;
+}
+
+.scroll-container.enable-scroll {
+  overflow: scroll;
+}
+
+.scroll-container.blur-content {
+  filter: blur(5px);
+  overflow: hidden !important;
+}
+/* Rotating Background Iamges */
+
+.scroll-container > div > .background-images {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 250%;
+  background-size: cover !important;
+  background-position: center;
+  transition: 1.3s;
+  opacity: 1;
+  animation: rotate-translate-background 200s infinite;
+}
+
+@keyframes rotate-translate-background {
+	0% {
+		/*transform: rotate(0deg) translateX(0) scale(1,1);*/
+		transform: rotate(180deg) translateX(100px) scale(1.4,1.4);
+	}
+	50% {
+		/*transform: rotate(180deg) translateX(100px) scale(1.4,1.4);*/
+		transform: rotate(360deg) translateX(0) scale(1,1);
+	}
+	100% {
+		/*transform: rotate(360deg) translateX(0) scale(1,1);*/
+		transform: rotate(0deg) translateX(0) scale(1,1);
+	}
+}
+.scroll-container > div > .background-images.hide {
+  opacity: 0;
+}
+
+
+/* Background Overlay and Gradient */
+
+.scroll-container > .background-overlay,
+.scroll-container > .background-gradient {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.scroll-container > .background-overlay {
+  top: 0;
+  background:black;
+  background: rgba(1, 1, 1, 0.8);
+  z-index: 1;
+}
+
+.scroll-container > .background-gradient {
+  bottom: 0;
+  height: 50%;
+  background:black;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+}
+
+@media(min-width:1025px) {
+  .scroll-container {
+    display: block;
+  }
+}

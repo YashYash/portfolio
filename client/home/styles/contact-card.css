@@ -1,0 +1,197 @@
+/* Contact Card */
+
+
+/* Overlay */
+
+.contact-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  opacity: 0;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+.contact-overlay.show {
+  display: block;
+}
+
+.contact-overlay.fade-in {
+  opacity: 0.7;
+}
+
+
+/* The Card */
+
+.contact-card {
+  position: fixed;
+  bottom: -100%;
+  width: 700px;
+  height: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: black;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 20px;
+  z-index: 3;
+  opacity: 0;
+  transform: scale(0.8, 0.8) rotateX(-25deg);
+  transition: 0.7s ease;
+}
+
+.contact-card.show {
+  opacity: 1;
+  bottom: -1px;
+  transform: scale(1, 1) rotateX(0deg);
+}
+
+.contact-card > .background-image,
+.contact-card > .overlay,
+.contact-card > .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-card > .background-image {
+  background: url('https://s3.amazonaws.com/spotonit/images/other/yash');
+  background: url('http://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-5.png');
+  background-size: cover !important;
+  /*filter: blur(2px);*/
+  overflow: hidden;
+}
+
+.contact-card > .overlay {
+  z-index: 1;
+  background: black;
+  opacity: 0.8;
+}
+
+.contact-card > .gradient {
+  background: black;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+  z-index: 4;
+  top: 32%;
+  height: 68%;
+}
+
+
+/* THE CLOSE ICON */
+
+.close-overlay {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  z-index: 3;
+  font-size: 35px;
+  width: 35px;
+  padding: 40px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.close-overlay.show {
+  transform: rotate(0deg);
+  opacity: 1;
+  top: 0;
+}
+
+
+/* Content */
+
+.contact-card > .content {
+  position: absolute;
+  height: 460px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.contact-card > .content > .icons {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+.contact-card > .content > .icons > .icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: inherit;
+  color: white;
+  cursor: pointer;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  transition: 0.4s;
+}
+
+.contact-card > .content > .icons > .icon:hover {
+  top: -10px;
+}
+
+.contact-card > .content > .icons > .icon.dribbble:hover {
+  color: #ea4c89;
+}
+
+.contact-card > .content > .icons > .icon.linkedin:hover {
+  color: #287bbc;
+}
+
+.contact-card > .content > .icons > .icon > .i {
+  font-size: 24px;
+}
+
+.contact-card > .content > p {
+  color: white;
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-style: italic;
+  letter-spacing: .2em;
+  font-weight: 100;
+}
+
+.contact-card > .content > button {
+  color: #fff;
+  height: 40px;
+  width: 180px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.contact-card > .content > button:hover {
+  background: white;
+  background: rgba(238, 238, 238, 0.1);
+}

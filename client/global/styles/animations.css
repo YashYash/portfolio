@@ -1,0 +1,31 @@
+/****************************************
+
+Global css file 
+
+Shared across all angular apps
+
+animations
+
+****************************************/
+
+
+/* Infinite Rotation */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-line {
+	from {
+		width:0;
+	}
+
+	to: {
+		width:100%;
+	}
+}

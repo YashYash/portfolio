@@ -1,0 +1,111 @@
+<!--**********************************
+
+Title
+work.html
+
+Route
+/#/
+
+CSS FILES
+global/styles/global.css
+home/styles/work.css
+
+Inline CSS
+
+Summary
+This is the work page
+
+********************************** -->
+
+<div class="pager">
+  <div
+    class="page"
+    *ng-for = "#page of pager; #i=index"
+    [ng-style] = "getPageStyle(i)"
+    (click) = "goToSection(i)"
+  >
+    <div></div>
+  </div>
+</div>
+
+<!-- Details Overlay -->
+<div
+  class="details-overlay"
+  [ng-style]="detailsOverlayStyling()"
+  (click)="hideDetails()"
+></div>
+<div class="details-container"
+  [ng-style] = "detailsContainerStyling()"
+>
+  <div class="content">
+    <div class="section"
+      [ng-style] = "detailsSectionStyling()"
+      *ng-for = "#project of projects; #i = index"
+    >
+      <p class="heading">{{project.heading}}</p>
+      <div class="line"></div>
+      <p class="stack">{{project.stack}}</p>
+      <p class="details">{{project.details}}</p>
+      <div
+        class="icon dribbble"
+        (click) = "openLink(project.dribbble)"
+        [ng-style] = "{'display': project.dribbble ? 'inline-block' : 'none' }"
+      >
+        <span class="icon-dribbble"></span>   
+        <p>DRIBBBLE</p>
+      </div>
+      <div
+        class="icon link"
+        (click) = "openLink(project.link)"
+        [ng-style] = "{'display': project.link ? 'inline-block' : 'none' }"
+      >
+        <span class="icon-link"></span>
+        <p>SEE IT LIVE!</p>       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section one in the banner -->
+<div class="work-banner-container">
+  <div class="overlay"></div>
+  <div class="content"
+  	[ng-class] = "{'fade-in': (scrollTop > (windowHeight - 200))}"
+  >
+  	<p (click) = "chode()">{{message}} I am currently the <span>LEAD FRONT-END DEVELOPER</span> at <span>STANZA</span>. I have desinged a scalable front-end architecture using <span>Angular 1.x</span>, which is comprised of modular custom directives that are shared across multiple angular apps. As a developer I am interested/investing time towards all new client side frameworks, such as <span>Angular 2.0</span> (this site is built using 2.0), <span>React with Flux</span>, <span>View</span>, <span>Ember</span> etc... I have also been working with <span>TypeScript</span> (Angular 2.0) and <span>Swift 2.0</span> to build ios apps. I am very comfortable with <span>CSS/SCSS/Stylus/Less</span>. I build my pages <span>mobile first</span> I do not require any bootstrapped templates. I have also written a descent amount of server side code for Stanza and for my personal projects. I have used <span>MongoDB</span>, <span>FIREBASE</span>, <span>MySql</span> and <span>Postgres</span>. I have set up webapps using <span>Express</span> as well as <span>Django</span> (a while ago). Over the last few months, I have been dedicating time towards becoming a better designer, by taking online courses and having one on ones with our talented designer at Stanza. I have taken courses for <span>C</span> and <span>Java</span> as well.</p>
+  </div>
+</div>
+
+<div class="work-section-container internal-dashboard"
+	*ng-for = "#project of projects; #i=index"
+>
+	<div class="overlay"></div>
+	<div class="content" 
+		[ng-class] = "{'fade-in': (scrollTop > (windowHeight * (i + 2)) - 300)}"
+	>
+		<p class="heading"
+      (click) = "viewDetails(i)"
+    >{{project.heading}}</p>
+		<p class="sub-heading">{{project.subHeading}}</p>
+    <p class="view-details"
+      (click) = "viewDetails(i)"
+    >VIEW DETAILS</p>
+  </div>
+  <div class="images">
+    <div
+      [ng-class] = "{ 'fade-in' : (scrollTop > (windowHeight * (i + 2)) - 300)}"
+    >
+      <img src="{{project.imageLeft}}">
+    </div>
+    <div
+      [ng-class] = "{ 'fade-in' : (scrollTop > (windowHeight * (i + 2)) - 300)}"
+    >
+      <img src="{{project.imageCenter}}">
+    </div>
+    <div
+      [ng-class] = "{ 'fade-in' : (scrollTop > (windowHeight * (i + 2)) - 300)}"
+    >
+      <img src="{{project.imageRight}}">
+    </div>
+  </div>
+</div>

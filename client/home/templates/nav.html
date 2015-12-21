@@ -1,0 +1,35 @@
+<div class="home-nav-container" [ng-class]="{'show': (isVisible())}">
+  <ul>
+    <li class="icon-facebook"
+    	(click) = "share('facebook')"
+    ></li>
+    <li class="icon-twitter"
+    	(click) = "share('twitter')"
+    ></li>
+    <li class="icon-google"
+    	(click) = "share('google')"
+    ></li>
+    <li class="icon-mail"
+    	(click) = "share('mail')"
+    ></li>
+  </ul>
+  <button (click) = "showContactCard()" >CONTACT ME</button>
+  <p class="link"
+    [ng-class] = "{'show': (currentVisibleLink === 'work')}"
+    (click) = "goToLink('about')"
+  >
+    ABOUT ME
+  </p>
+  <p class="link"
+    [ng-class] = "{'show': (currentVisibleLink === 'about')}"
+    (click) = "goToLink('work')"
+  >
+    MY WORK
+  </p>
+  <p class="link home" (click) = "goToLink('')">HOME</p>
+</div>
+
+<!-- <div class="contact-overlay"></div>
+<div class="contact-card"> -->
+  
+</div>

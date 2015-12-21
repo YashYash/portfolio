@@ -1,0 +1,27 @@
+{
+    "version": "1.6.0",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "home/scripts/*.ts",
+        "home/scripts/directives/*.ts",
+        "home/scripts/factories/*.ts",
+        "dashboard/scripts/*.ts",
+        "dashboard/scripts/directives/*.ts",
+        "global/scripts/interfaces/*.ts",
+        "global/scripts/factories/*.ts",
+        "global/scripts/directives/*.ts"
+
+    ],
+    "compileOnSave": true,
+    "exclude": []
+}

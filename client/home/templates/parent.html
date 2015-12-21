@@ -1,0 +1,71 @@
+<!--**********************************
+
+Title
+parent.html
+
+Route
+/#/
+
+CSS FILES
+global/styles/global.css
+home/styles/parent.css
+
+Inline CSS
+
+Summary
+This is the secondary parent container after body and <app></app>
+
+********************************** -->
+
+<div class="scroll-container"
+  [ng-class] = "{
+    'enable-scroll' : (imagesLoaded),
+    'blur-content' : (getComponentState('ContactCard').fadeInOverlay)
+  }"
+>
+
+  <!-- NAV -->
+  <nav
+    [scrolltop] = "scrollTop"
+  ></nav>
+
+  <!-- BACKGROUND -->
+  <div id="background-images-container">
+      <div class = "background-images" 
+       *ng-for = "#background of backgroundImages; #i=index"
+       [ng-style] = "styleBackground(background, i)"
+      ></div>
+  </div>
+
+  <!-- LANDING BANNER - SITE ROUTING HAPPENS HERE -->
+  <landing-banner></landing-banner>
+
+  <!-- ROUTING VIEWS -->
+  <!-- <router-outlet [message]="'Launch missiles?'"></router-outlet> -->
+  <!-- WORK - '/work' -->
+  <work
+    (scrollevents) = "onScroll($event)"
+    [ng-style] = "{
+      'display' : path === 'work' ? 'block' : 'none',
+      'height' : '100%'
+    }"
+  ></work>
+
+  <!-- ABOUT - '/about' -->
+  <about
+    [scrolltop] = "scrollTop"
+    [windowheight] = "windowHeight"
+    [ng-style] = "{
+      'display' : path === 'about' ? 'block' : 'none',
+      'height' : '100%'
+    }"
+  ></about>
+
+</div>
+
+
+<!-- CONTACT CARD -->
+<contact-card></contact-card>
+
+<!-- MOBILE -->
+<mobile-view></mobile-view>

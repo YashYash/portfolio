@@ -1,0 +1,35 @@
+<div class="contact-overlay"
+	[ng-class] = "{
+		'show' : (getComponentState('ContactCard').showOverlay),
+		'fade-in' : (getComponentState('ContactCard').fadeInOverlay)
+	}"
+></div>
+<span class="icon-delete-small close-overlay"
+	(click) = "hideContactCard()"
+	[ng-class] = "{
+		'show' : (getComponentState('ContactCard').showCross)
+	}"
+></span>
+
+<div class="contact-card"
+	[ng-class] = "{
+		'show' : (getComponentState('ContactCard').showCard)
+	}"
+>
+	<div class="background-image"></div>
+	<div class="overlay"></div>
+	<div class="gradient"></div>
+	<div class="content">
+		<div class="icons">
+			<div class="icon linkedin" (click) = "goTo('linkedin')">
+				<span class="icon-linkedin i"></span>
+				<span></span>
+			</div>
+			<div class="icon dribbble" (click) = "goTo('dribbble')">
+				<span class="icon-dribbble i"></span>
+			</div>
+		</div>
+		<p>Feel free to email me! I am open to do contract work as well.</p>
+		<button (click) = "sendMail()">SEND EMAIL</button>
+	</div>
+</div>

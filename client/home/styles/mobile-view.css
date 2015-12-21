@@ -1,0 +1,199 @@
+.mobile-view-container {
+  position: relative;
+  height: auto;
+  display: block;
+  color: white;
+}
+
+.mobile-view-container > .banner,
+.mobile-view-container > .about {
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+
+
+/* Banner */
+
+.mobile-view-container > .banner {
+  padding: 180px 0 120px 0;
+  background: url("http://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-4.png");
+  background-size: cover;
+}
+
+.mobile-view-container > .banner > .overlay,
+.mobile-view-container > .banner > .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-view-container > .banner > .overlay {
+  background: black;
+  opacity: 0.65;
+}
+
+.mobile-view-container > .banner > .gradient {
+  background: black;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+}
+
+.mobile-view-container > .banner > .heading {
+  position: relative;
+  color: white;
+  font-size: 35px;
+  font-weight: 100;
+  height: 35px;
+  margin: 0;
+}
+
+.mobile-view-container > .banner > .line {
+  position: relative;
+  height: 2px;
+  width: 50px;
+  margin: 10px auto 20px;
+  background: #fff;
+  background: rgba(238, 238, 238, .1);
+  position: relative;
+}
+
+.mobile-view-container > .banner > .sub-heading {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.mobile-view-container > .banner > .tail {
+  position: relative;
+  width: 1px;
+  background: white;
+  height: 50px;
+  margin: auto;
+}
+
+.mobile-view-container > .banner > .head {
+  color: #fff;
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+}
+
+
+}
+
+/* About */
+.mobile-view-container > .about {
+  background: black;
+  padding: 40px 30px;
+}
+.mobile-view-container > .about > .text {
+  font-weight: 100;
+  letter-spacing: .2em;
+  line-height: 1.5em;
+  font-style: italic;
+}
+.mobile-view-container > .about > .text > span {
+  color: #22c1ee;
+  text-transform: uppercase;
+}
+
+/* Work */
+.mobile-view-container > .work {
+  position: relative;
+  height: 600px;
+  background: url("http://dff2h0hbfv6w4.cloudfront.net/ZAXSCDVF12345/backgrounds/low-poly-texture-4.png");
+  background-size: cover;
+}
+.mobile-view-container > .work > .overlay,
+.mobile-view-container > .work > .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mobile-view-container > .work > .overlay {
+  background: black;
+  opacity: 0.65;
+}
+.mobile-view-container > .work > .gradient {
+  background: black;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0, rgba(255, 255, 255, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+}
+.mobile-view-container > .work > .work-slider .slide {
+  text-align: center;
+  height: 600px;
+}
+.mobile-view-container > .work > .work-slider .slide .content {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+.mobile-view-container > .work > .work-slider .slide .content > .heading {
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+}
+.swiper-container {
+  width: 100%;
+  height: 600px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+.swiper-slide .heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  padding-top: 40px;
+  margin: 10px;
+  height: auto;
+  line-height: 1.3em;
+}
+.swiper-slide .stack,
+.swiper-slide .details {
+  letter-spacing: .1em;
+  line-height: 1.5em;
+  font-style: italic;
+  width: 90%;
+  margin: auto;
+}
+.swiper-slide .stack {
+  text-align: center;
+  color: #22c1ee;
+  color: #22c1ee;
+  font-size: 12px;
+}
+.swiper-slide .details {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+	background:white !important;
+}
+.swiper-pagination-bullet-active {
+	background:#22c1ee !important;
+}
+@media(min-width:1025px) {
+  .mobile-view-container {
+    display: none;
+  }
+}
