@@ -102,7 +102,7 @@ export class Nav {
 
     share(type) {
         let webUrl: string = "http://yash-saxena.com";
-        let tweetTitle: string = "Check out Yash Saxena - Lead Frontend Engineer @ Stanza";
+        let tweetTitle: string = "Check out Yash Saxena - Lead Frontend Engineer @Stanza";
         let title:string = "Yash Saxena - Lead Frontend Engineer";
         let mailLink:string = "mailto:?Subject=Yash%20Saxena%20-%20Lead%20Frontend%20Engineer&body=Check%20out%20Yash%20Saxena's%20personal%20website%20here%20-%20" + webUrl + ".%20Dribbble%20-%20https://dribbble.com/yashsaxena.%20Github%20-%20https://github.com/YashYash.";
         let fbUrl: string = "https://www.facebook.com/sharer/sharer.php?u=" + webUrl;
