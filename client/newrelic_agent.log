@@ -188,3 +188,10 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14241,"time":"2015-12-22T00:01:01.074Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14241,"time":"2015-12-22T00:01:04.002Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/809650/applications/15852560","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14241,"time":"2015-12-22T00:01:04.002Z","msg":"Connected to collector-185.newrelic.com:443 with agent run ID 68262175275982978.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14617,"time":"2015-12-22T01:36:37.566Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14679,"time":"2015-12-22T01:36:41.079Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14679,"time":"2015-12-22T01:36:44.664Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/809650/applications/15852560","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":14679,"time":"2015-12-22T01:36:44.665Z","msg":"Connected to collector-185.newrelic.com:443 with agent run ID 68262175276236648.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":15022,"time":"2015-12-22T01:39:38.477Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":15022,"time":"2015-12-22T01:39:41.173Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/809650/applications/15852560","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MacBook-Pro.local","pid":15022,"time":"2015-12-22T01:39:41.174Z","msg":"Connected to collector-185.newrelic.com:443 with agent run ID 68262175276243959.","component":"collector_api"}
