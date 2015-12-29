@@ -14,3 +14,8 @@ Build system - Gulp
 
 ## Hosted on
 Heroku
+
+## Run the app
+If you would like to run the app:
+1. npm install
+2. npm start
