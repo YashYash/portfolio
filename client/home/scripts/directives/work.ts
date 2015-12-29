@@ -75,7 +75,7 @@ export class Work {
 		this.projects = Projects.getProjects();
 		this.pager = [];
 		this.pagerVisible = false;
-		for (var i = 0; i < 7; i++) {
+		for (var i = 0; i < this.projects.length + 1; i++) {
 			this.pager.push({
 				visible: false,
 				active: false,

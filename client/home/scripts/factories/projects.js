@@ -1,6 +1,16 @@
 exports.Projects = {
     getProjects: function () {
         var projects = [{
+                "heading": "SPOTON TO STANZA",
+                "subHeading": "Earlier this year, Stanza rebranded from SpotOn to Stanza. Along with the rebrand came a full out product redesign. I rebuilt the home page, about us, contact us, partners and terms/privacy pages.",
+                "stack": "NodeJs, Express, MongoDB, Angular 1.x, Ionic, Html5, Css",
+                "details": "The rebrand was a pretty big project which involved a lot of work, primarily on the front end. Most of the work was pretty straight forward. The hardest part was building the actual landing page, which is full of animations that are pretty much movies. We were not able to used gifs, since each of the sections on the homepage do not have solid backgrounds. Therefore I had to do all the animations in pure html, css and javascript. I abused the ng-class and ng-style directives that angular provides. The performance was very smooth and we did not see any lags. I made as many of the elements in html/css (image of a phone), since we lazy load images which affects the appearance of the animation. ",
+                "imageLeft": "https://d13yacurqjgara.cloudfront.net/users/754124/screenshots/2420770/attachments/469402/screen_shot_2015-12-22_at_2.14.52_pm.png",
+                "imageCenter": "https://d13yacurqjgara.cloudfront.net/users/754124/screenshots/2420770/attachments/469398/screen_shot_2015-12-22_at_2.24.43_pm.png",
+                "imageRight": "https://d13yacurqjgara.cloudfront.net/users/754124/screenshots/2420770/attachments/469403/screen_shot_2015-12-22_at_2.16.47_pm.png",
+                "dribbble": "https://dribbble.com/shots/2420770-Stanza-s-new-Homepage",
+                "link": "https://stanza.co"
+            }, {
                 "heading": "INTERNAL DASHBOARD",
                 "subHeading": "I built this internal dashboard in my free time. It categorizes analytics and errors based on the angular app. I used socket.io to show notifications, and errors in real time. I only used directives by nesting them and creating the dom tree. This proved to actually perform better and resulted in cleaner code.",
                 "stack": "NodeJs, Express, MongoDB, Angular 1.x, Socket.io, Ionic, Html5, Css, Photoshop, Illustrator",

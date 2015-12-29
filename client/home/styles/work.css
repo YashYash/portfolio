@@ -8,348 +8,386 @@ work/templates/work.html
 
 ****************************************/
 
+
 /* Pager */
+
 .pager {
-	position: fixed;
-	top:0;
-	bottom:0;
-	left: 30px;
-	width:50px;
-	height:400px;
-	margin:auto;
-	z-index: 5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 50px;
+  height: 440px;
+  margin: auto;
+  z-index: 5;
 }
 
 .pager > .page {
-	position: relative;
-	display: block;
-	width:40px;
-	height:40px;
-	border-radius:100%;
-	margin: 15px auto;
-	opacity: 0;
-	cursor: pointer;
-	transform:translateX(-20px);
-	transition:0.5s;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px auto;
+  opacity: 0;
+  cursor: pointer;
+  transform: translateX(-20px);
+  transition: 0.5s;
 }
 
 .pager > .page:hover {
-	transition:0s;
-	border:2px solid white !important;
-	border: 2px solid rgba(238,238,238, 0.2) !important;
+  transition: 0s;
+  border: 2px solid white !important;
+  border: 2px solid rgba(238, 238, 238, 0.2) !important;
 }
 
 .pager > .page > div {
-	position: absolute;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	margin:auto;
-	width:3px;
-	height:3px;
-	background:white;
-	border-radius:100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 100%;
 }
+
 
 /* Home page banner */
+
 .work-banner-container {
-	position: relative;
-	width:100%;
-	height:100%;
-	background:black;
-	background:rgba(1,1,1,0.9);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: rgba(1, 1, 1, 0.9);
 }
 
-/* THe overlay that is transitioned into from the landing-banner view */
+
+/* The overlay that is transitioned into from the landing-banner view */
+
 .work-banner-container > .overlay {
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:black;
-	background: rgba(1,1,1,0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: rgba(1, 1, 1, 0.65);
 }
 
 .work-banner-container > .content {
-	position: absolute;
-	bottom:0;
-	left:0;
-	right:0;
-	margin:auto;
-	color:white;
-	font-size:14px;
-	width:90%;
-	height:250px;
-	max-width:800px;
-	text-align: center;
-	transition:0.5s;
-	opacity: 0;
-	top:100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  font-size: 14px;
+  width: 90%;
+  height: 250px;
+  max-width: 800px;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+  top: 100px;
 }
 
 .work-banner-container > .fade-in {
-	top:0;
-	opacity: 1;
+  top: 0;
+  opacity: 1;
 }
+
 .work-banner-container > .content > p {
-	font-weight:100;
-	letter-spacing: 0.2em;
-	line-height:1.5em;
-	font-style: italic;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  font-style: italic;
 }
 
 .work-banner-container > .content > p > span {
-	color:#22c1ee;
-	text-transform: uppercase;
+  color: #22c1ee;
+  text-transform: uppercase;
 }
+
+
 /* The sections */
+
 .work-section-container {
-	position: relative;
-	height:100%;
-	text-align: center;
-	background:black;
-	background:rgba(1,1,1,0.9);
-	transition:0.7s;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background: black;
+  background: rgba(1, 1, 1, 0.9);
+  transition: 0.7s;
 }
 
 .work-section-container > .overlay {
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:black;
-	background: rgba(1,1,1,0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: rgba(1, 1, 1, 0.65);
 }
 
 .work-section-container > .content {
-	position: relative;
-	opacity: 0;
-	top:100px;
-	transition:0.7s;
+  position: relative;
+  opacity: 0;
+  top: 100px;
+  transition: 0.7s;
 }
+
 .work-section-container > .fade-in {
-	opacity: 1;
-	top:0;
+  opacity: 1;
+  top: 0;
 }
 
 .work-section-container > .content > .heading {
-	font-size:30px;
-	color:white;
-	font-weight:100;
-	margin:0;
-	position: relative;
-	padding-top:150px;
-	cursor: pointer;
-	transition:0.3s;
+  font-size: 30px;
+  color: white;
+  font-weight: 100;
+  margin: 0;
+  position: relative;
+  padding-top: 150px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .work-section-container > .content > .heading:hover {
-	text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px white;
 }
 
 .work-section-container > .content > .sub-heading {
-	position: relative;
-	color:white;
-	font-weight:100;
-	letter-spacing: 0.2em;
-	line-height:1.5em;
-	font-style: italic;
-	max-width:600px;
-	margin:auto;
-	padding:20px 0;
+  position: relative;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  font-style: italic;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 0;
 }
 
 .work-section-container > .content > .view-details {
-    margin: 0;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: underline;
-    cursor: pointer;
-    transition:0.3s;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .work-section-container > .content > .view-details:hover {
-	text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px white;
 }
 
 .work-section-container > .fade-in {
-	top:0;
-	opacity: 1;
+  top: 0;
+  opacity: 1;
 }
 
 .work-section-container > .images {
-	position: relative;
-	width:80%;
-	height:35%;
-	margin:auto;
-	top:50px;
+  position: relative;
+  width: 80%;
+  height: 35%;
+  margin: auto;
+  top: 50px;
 }
 
 .work-section-container > .images > div {
-	position: absolute;
-	top:0;
-	width: 40%;
-	height:100%;
-	transition:1s ease;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  transition: 1s ease;
 }
 
 .work-section-container > .images > div:nth-child(1) {
-	top:30px;
-	left:150px;
-	opacity: 0;
+  top: 30px;
+  left: 150px;
+  opacity: 0;
 }
 
 .work-section-container > .images > div:nth-child(1).fade-in {
-	opacity: 1;
-	left:40px;
+  opacity: 1;
+  left: 40px;
 }
+
 .work-section-container > .images > div:nth-child(2) {
-	left:0;
-	right:0;
-	margin:auto;
-	z-index: 1;
-	width:50%;
-	box-shadow:0 0 20px rgba(1,1,1,0.7);	
-	opacity: 0;
-	transform:translateY(100px);
-	transition:0.5s;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  width: 50%;
+  box-shadow: 0 0 20px rgba(1, 1, 1, 0.7);
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
 }
 
 .work-section-container > .images > div:nth-child(2).fade-in {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
+
 .work-section-container > .images > div:nth-child(3) {
-	top:30px;
-	right:150px;
-	opacity: 0;
+  top: 30px;
+  right: 150px;
+  opacity: 0;
 }
 
 .work-section-container > .images > div:nth-child(3).fade-in {
-	opacity:1;
-	right:40px;
-}
-.work-section-container > .images > div > img {
-	width:100%;
-	height:auto;
+  opacity: 1;
+  right: 40px;
 }
 
+.work-section-container > .images > div > img {
+  width: 100%;
+  height: auto;
+}
+
+
 /* Detials Overlay */
+
 .details-overlay {
-	position: fixed;
-	z-index: 3;
-	background:black;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	transition:0.4s;
+  position: fixed;
+  z-index: 3;
+  background: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
 }
 
 .details-container {
-	position: fixed;
-	top:0;
-	bottom:0;
-	left:0;
-	right:0;
-	height:100%;
-	width:100%;
-	max-width: 70%;
-	background:black;
-	margin:auto;
-	z-index: 4;
-	transition:0.4s;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  background: black;
+  margin: auto;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+.details-container > .icon-close {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 30px;
+  right:30px;
+  width:30px;
+  height:30px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  transition:0.4s ease;
+}
+
+.details-container > .icon-close:hover {
+	color:#22c1ee;
 }
 
 .details-container > .content {
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .details-container > .content > .section {
-	position: relative;
-	height:100%;
-	width:100%;
-	text-align: center;
-	transition:1s ease;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: 1s ease;
 }
 
 .details-container > .content > .section > .heading {
-	padding-top:100px;
-	color:white;
-	font-weight:100;
-	font-size:40px;
-	margin:0;
-	height:40px;
+  padding-top: 100px;
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0;
+  height: 40px;
 }
 
 .details-container > .content > .section > .line {
-	position: relative;
-	height:2px;
-	background:white;
-	background:rgba(238,238,238,0.2);
-	width:50px;
-	margin:10px auto;
+  position: relative;
+  height: 2px;
+  background: white;
+  background: rgba(238, 238, 238, 0.2);
+  width: 50px;
+  margin: 10px auto;
 }
 
 .details-container > .content > .section > .stack,
 .details-container > .content > .section > .details {
-    letter-spacing: 0.1em;
-    line-height: 1.5em;
-    font-style: italic;
-    width: 90%;
-    margin: auto;	
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-style: italic;
+  width: 90%;
+  margin: auto;
 }
+
 .details-container > .content > .section > .stack {
-	color:#22c1ee;
-    max-width: 500px;
-    font-size:12px;
+  color: #22c1ee;
+  max-width: 500px;
+  font-size: 12px;
 }
+
 .details-container > .content > .section > .details {
-	color:white;
-	font-size:14px;
-	margin-top: 20px;
-	font-weight:100;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 100;
 }
 
 .details-container > .content > .section > .icon {
-	width:100px;
-	height:50px;
-	vertical-align: top;
-	cursor: pointer;
-	margin:35px 10px;
-	color:white;
+  width: 100px;
+  height: 50px;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 35px 10px;
+  color: white;
 }
 
 .details-container > .content > .section > .icon > span {
-	display: block;
-	font-size:20px;
-	cursor: pointer;
-	position: relative;
-	top:0;
-	color:white;
-	transition: 0.4s;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  color: white;
+  transition: 0.4s;
 }
 
 .details-container > .content > .section > .icon > .icon-dribbble:hover {
-	color:#ea4c89;
-	top:-5px;
+  color: #ea4c89;
+  top: -5px;
 }
 
 .details-container > .content > .section > .icon > .icon-link:hover {
-	color:#22c1ee;
-	top:-5px;
+  color: #22c1ee;
+  top: -5px;
 }
-.details-container > .content > .section > .icon >  p {
-	color:inherit;
-	font-size:10px;
-	font-weight:600;
+
+.details-container > .content > .section > .icon > p {
+  color: inherit;
+  font-size: 10px;
+  font-weight: 600;
 }

@@ -26,6 +26,9 @@ This is the landing page
 			<p class="sub-heading"
 				[ng-style] = "{'opacity' : showSubHeading ? 1 : 0, 'top' : showSubHeading ? 0 : '10px'}"
 			>POWERED BY ANGULAR 2.0</p>
+			<p class="loading-copy"
+				[ng-style] = "{'opacity' : showLoadingCopy ? 1 : 0, 'top' : showLoadingCopy ? 0 : '10px'}"
+			>LOADING</p>
 			<div class="loader">
 				<div class="line"
 					[ng-style]="loadingAnimation()"

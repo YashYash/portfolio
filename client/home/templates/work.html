@@ -37,6 +37,9 @@ This is the work page
 <div class="details-container"
   [ng-style] = "detailsContainerStyling()"
 >
+  <span class="icon-close"
+    (click)="hideDetails()"
+  ></span>
   <div class="content">
     <div class="section"
       [ng-style] = "detailsSectionStyling()"

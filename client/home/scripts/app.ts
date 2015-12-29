@@ -99,7 +99,7 @@ export class App {
 	currentBackground: number;
 	backgroundImages: Array<string>;
 	imagesLoaded: boolean;
-	loadingProgress: string;
+	loadingProgress: any;
 	contactCardVisible: boolean;
 
 	constructor(router: Router, location: Location) {
@@ -110,6 +110,7 @@ export class App {
 		this.rotateBackgrounds(0);
 		this.backgroundImages = BackgroundImages.images();
 		this.contactCardVisible = false;
+		this.loadingProgress = 0;
 		router.subscribe(path => {
 			self.routeChanged(path);			
 		});
@@ -144,9 +145,10 @@ export class App {
 			$('.scroll-container').waitForImages(() => {
 				self.imagesLoaded = true;
 			}, (loaded, total) => {
-				self.loadingProgress = (loaded / (total - 12)) * 100 + "%";
 				if (self.loadingProgress === "100%") {
 					self.imagesLoaded = true;
+				} else {
+					self.loadingProgress = (loaded / (total - 11)) * 100 + "%";
 				}
 			});
         }, 1000);

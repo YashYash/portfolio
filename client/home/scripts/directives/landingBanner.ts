@@ -37,7 +37,7 @@ import { ComponentsState }                    from '/build/home/scripts/services
  */
 @Component({
 	selector: 'landing-banner',
-	inputs: ['imagesLoaded: imagesloaded'],
+	inputs: ['imagesLoaded: imagesloaded', 'loadingProgress: loadingprogress'],
 	directives: [CORE_DIRECTIVES, ROUTER_DIRECTIVES],
 	templateUrl: "/home/templates/landing-banner.html"
 })
@@ -54,23 +54,25 @@ export class LandingBanner {
 	showHeading: boolean;
 	showSubHeading: boolean;
 	startLoading: boolean;
-	loadingProgress: string;
+	loadingProgress: any;
 	imagesLoaded: boolean;
 	workVisible: boolean;
 	showArrowTail: boolean;
 	showArrowHead: boolean;
 	aboutVisible: boolean;
+	showLoadingCopy: boolean;
 
 	constructor(router: Router) {
 		console.log("#### Landing Banner Component");
 		var self = this;
 		this.startLoading = false;
-		this.loadingProgress = "";
+		this.loadingProgress = 0;
 		this.imagesLoaded = false;
 		this.workVisible = false;
 		this.aboutVisible = false;
 		this.showArrowTail = false;
 		this.showArrowHead = false;
+		this.showLoadingCopy = false;
 
 		// Watch routes change
 		router.subscribe(path => {
@@ -105,9 +107,15 @@ export class LandingBanner {
     animateIntro() {
 		var self = this;
 		setTimeout(() => {
-			this.showHeading = true;
+			self.showHeading = true;
 			setTimeout(() => {
 				self.showSubHeading = true;
+				setTimeout(() => {
+					self.showLoadingCopy = true;
+					if (!self.loadingProgress) {
+						self.loadingProgress = "20%";
+					}
+				}, 500);
 			}, 500);			
 		}, 200);
 	}
