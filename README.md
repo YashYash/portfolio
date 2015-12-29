@@ -1,12 +1,5 @@
-#### Decisions Web
-
-## Author
-Yash Saxena
-
-### WEB
-
 ## Summary
-Decisions is a web app and ios app that lets people have their friends and family make tough decisions for them. The idea behind this is that many minds put together will always be better than just one. 
+Decided to rebuild my personal site in Angular 2.0
 
 ## Server
 JavaScript ECMA script 5
@@ -20,10 +13,4 @@ Angular 2.0
 Build system - Gulp
 
 ## Hosted on
-Amazon AWS cloudfront
-
-### IOS
-
-
-## Last updated
-Friday, November 6th, 2015
+Heroku
