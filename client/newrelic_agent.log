@@ -1146,3 +1146,6 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19551,"time":"2016-03-17T00:51:44.325Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19551,"time":"2016-03-17T00:51:47.265Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/809650/applications/15852560","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19551,"time":"2016-03-17T00:51:47.266Z","msg":"Connected to collector-185.newrelic.com:443 with agent run ID 68223258951489859.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19623,"time":"2016-03-17T00:57:08.431Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19623,"time":"2016-03-17T00:57:12.047Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/809650/applications/15852560","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Yashs-MBP.wp.comcast.net","pid":19623,"time":"2016-03-17T00:57:12.048Z","msg":"Connected to collector-185.newrelic.com:443 with agent run ID 68223258951504796.","component":"collector_api"}
